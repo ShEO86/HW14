@@ -6,9 +6,9 @@ public class Staff {
     public Staff() {
         this.employees = new Employee[10];
     }
-    public void addEmploye(String firstName, String lastName, String middleName, int department, double salary) {
+    public void addEmploye(String lastName, String firstName, String middleName, int department, double salary) {
         if (size < employees.length) {
-            Employee newEmploye = new Employee(firstName, lastName, middleName, department, salary);
+            Employee newEmploye = new Employee(lastName, firstName, middleName, department, salary);
             employees[size++] = newEmploye;
         } else {
             System.out.println("Штат сотрудников набран");

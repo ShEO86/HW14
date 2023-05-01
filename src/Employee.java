@@ -9,10 +9,10 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Сотрудник: \n" + "ФИО: " + firstName + " " + lastName + " " + middleName + ";\n ИД департамента: " + department + ";\n Зарплата: " + salary + "\n";
+        return "Сотрудник: \n" + "ФИО: " + lastName + " " + firstName + " " + middleName + ";\n ИД департамента: " + department + ";\n Зарплата: " + salary + "\n";
     }
 
-    public Employee(String firstName, String lastName, String middleName, int department, double salary) {
+    public Employee(String lastName, String firstName, String middleName, int department, double salary) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.middleName = middleName;
